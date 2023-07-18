@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Todo App JS</title>
+	<link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+	<div>
+		<header>
+			<div>
+				<h1>Tasks</h1>
+				<span> List</span>
+			</div>
+			<nav onclick="AddPopup()"><button> <img src="circle-plus-solid.svg"></button><span>Add Item</span></nav>
+		</header>
+		<nav class="sidebar">
+			<div>
+				<h6 class="Back">Back</h6>
+			</div>
+			<div class="text"></div>
+			<nav><button id="addItem">+</button></nav>
+		</nav>
+		<section class="sec">
+			<div id="noText">No Items in the todo list.</div>
+		</section>
+	</div>
+	<div class="addList">
+		<div>
+			<label>Add New List</label>
+		</div>
+		<div>
+			<input type="text" name="addList" id="addpara" placeholder="Add New List" />
+		</div>
+		<div>
+			<div class="addButton" onclick="addnewPopup()">Add</div>
+			<div class="close1">Close</div>
+		</div>
+	</div>
+	<div class="addItem">
+		<div>
+			<label for="addItem">Add New Item</label>
+		</div>
+		<div>
+			<input type="text" name="addItem" id="inpuTtext" placeholder="Add New Item" />
+		</div>
+		<div>
+			<div class="ItemBtn">Add</div>
+			<div class="close2">Close</div>
+		</div>
+	</div>
+	<script src="./script.js"></script>
+</body>
+
+</html>
